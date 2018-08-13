@@ -1,0 +1,5 @@
+.gradle
+.idea
+**/build/
+/js/node_modules
+.DS_Store
