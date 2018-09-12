@@ -3,8 +3,9 @@ apply plugin: 'kotlin-platform-jvm'
 archivesBaseName = 'condorcet-jvm'
 
 dependencies {
-    expectedBy project(':common')
+    expectedBy project(':common-backend')
     compile libraries.kotlin_stdlib
+    compile libraries.kotlinx_html_js
     testCompile libraries.kotlin_test_junit
 }
 

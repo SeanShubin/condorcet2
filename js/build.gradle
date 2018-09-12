@@ -4,8 +4,10 @@ apply plugin: 'com.moowork.node'
 archivesBaseName = 'condorcet-js'
 
 dependencies {
-    expectedBy project(':common')
+    expectedBy project(':common-frontend')
+    expectedBy project(':common-backend')
     compile libraries.kotlin_stdlib_js
+    compile libraries.kotlinx_html_js
     testCompile libraries.kotlin_test_js
 }
 

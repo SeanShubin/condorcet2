@@ -1,6 +1,6 @@
 package com.seanshubin.condorcet.jvm
 
-import com.seanshubin.condorcet.common.TableFormatter
+import com.seanshubin.condorcet.common.backend.TableFormatter
 import org.junit.Test
 import kotlin.test.assertEquals
 

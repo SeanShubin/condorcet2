@@ -1,6 +1,6 @@
 package com.seanshubin.condorcet.jvm
 
-import com.seanshubin.condorcet.common.Condorcet
+import com.seanshubin.condorcet.common.backend.Condorcet
 import org.junit.Test
 import kotlin.test.assertTrue
 

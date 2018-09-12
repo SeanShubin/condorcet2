@@ -7,6 +7,7 @@ apply plugin: "com.eriwen.gradle.js"
 dependencies {
     compile project(':js')
     compile libraries.kotlin_stdlib_js
+    compile libraries.kotlinx_html_js
 }
 
 [compileKotlin2Js, compileTestKotlin2Js]*.configure {

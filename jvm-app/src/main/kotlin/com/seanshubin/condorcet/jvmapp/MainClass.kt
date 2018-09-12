@@ -1,6 +1,6 @@
 package com.seanshubin.condorcet.jvmapp
 
-import com.seanshubin.condorcet.common.Condorcet
+import com.seanshubin.condorcet.common.backend.Condorcet
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader

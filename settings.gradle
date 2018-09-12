@@ -1,6 +1,8 @@
 rootProject.name = 'condorcet'
 
-include ':common'
+include ':common-generic'
+include ':common-backend'
+include ':common-frontend'
 include ':jvm'
 include ':jvm-app'
 include ':js'

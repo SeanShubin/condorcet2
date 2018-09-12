@@ -26,6 +26,7 @@ buildscript {
 ext {
     nodeVersion = '8.11.3'
     qunitVersion = '2.6.1'
+    kotlinxHtmlVersion = '0.6.11'
     libraries = [
             junit: "junit:junit:4.12",
             kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
@@ -35,7 +36,10 @@ ext {
             kotlin_test_common: "org.jetbrains.kotlin:kotlin-test-common:$kotlinVersion",
             kotlin_test_js: "org.jetbrains.kotlin:kotlin-test-js:$kotlinVersion",
             kotlin_test_junit: "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
-            kotlinx_coroutines_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinVersion"
+            kotlinx_coroutines_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinVersion",
+            kotlinx_html: "org.jetbrains.kotlinx:kotlinx-html:$kotlinxHtmlVersion",
+            kotlinx_html_js: "org.jetbrains.kotlinx:kotlinx-html-js:$kotlinxHtmlVersion",
+            kotlinx_html_jvm: "org.jetbrains.kotlinx:kotlinx-html-jvm:$kotlinxHtmlVersion"
     ]
 }
 
