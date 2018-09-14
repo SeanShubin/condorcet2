@@ -3,30 +3,31 @@ package js
 import com.seanshubin.condorcet.common.backend.Condorcet
 import com.seanshubin.condorcet.js.SampleData
 import kotlinx.html.div
+import kotlinx.html.dom.append
+import kotlinx.html.h2
+import kotlinx.html.pre
 import kotlin.browser.document
-import kotlinx.html.dom.*
-import kotlinx.html.p
 
 fun main(arguments: Array<String>) {
-    val node = document.body!!.append.div {
-        p {
-            +"test"
-        }
-    }
-    val text = node.outerHTML
-    document.writeln(text)
+    val condorcetDiv = document.body!!.append.div()
 
     val inputLines = SampleData.sampleInput
-    document.writeln("<h2>Input</h2>")
-    document.writeln("<pre>")
-    document.writeln(inputLines.size.toString())
-    inputLines.forEach { document.writeln(it) }
-    document.writeln("</pre>")
+    condorcetDiv.append {
+        h2 {
+            +"Input"
+        }
+        pre {
+            +inputLines.joinToString("\n")
+        }
+    }
 
     val outputLines = Condorcet.processLines(inputLines)
-    document.writeln("<h2>Output</h2>")
-    document.writeln("<pre>")
-    outputLines.forEach { document.writeln(it) }
-    document.writeln("</pre>")
-
+    condorcetDiv.append {
+        h2 {
+            +"Output"
+        }
+        pre {
+            +outputLines.joinToString("\n")
+        }
+    }
 }
