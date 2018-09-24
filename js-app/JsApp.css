@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.label {
+span.label {
     width: 25%;
     float: left;
 }
@@ -26,4 +26,9 @@ body {
 .ranking-input {
     width: 2em;
     margin-right: 1em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
 }

@@ -1,7 +1,5 @@
 package com.seanshubin.condorcet.js
 
-import com.seanshubin.condorcet.common.backend.Ranking
-
 object SampleData {
     val sampleInput: List<String> = """
 candidates (name)
@@ -32,9 +30,16 @@ ballots (name confirmation { rank candidate })
     Judy  0bee5954-167e-4798-a7ba-946e63b32aff 1 radical-changes    2 minor-improvements 3 status-quo
 """.trim().split("\r\n", "\r", "\n")
 
-    val election = "My Election"
-    val candidate1 = Ranking(1, "Alice")
-    val candidate2 = Ranking(2, "Bob")
-    val candidate3 = Ranking(3, "Carol")
-    val rankings = listOf(candidate1, candidate2, candidate3)
+    val election1 = "Election 1"
+    val election2 = "Election 2"
+    val election3 = "Election 3"
+    val electionNames = listOf(election1, election2, election3)
+    val candidate1 = "Alice"
+    val candidate2 = "Bob"
+    val candidate3 = "Carol"
+    val candidates = listOf(candidate1, candidate2, candidate3)
+    val candidateRanking1 = Ranking(1, candidate1)
+    val candidateRanking2 = Ranking(2, candidate2)
+    val candidateRanking3 = Ranking(3, candidate3)
+    val rankings = listOf(candidateRanking1, candidateRanking2, candidateRanking3)
 }
